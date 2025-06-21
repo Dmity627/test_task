@@ -1,0 +1,10 @@
+export const CREDENTIALS_PATH = 'src/config/credentials/credentials.json';
+export const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
+export const DEFAULT_SHEET_RANGE = 'list1';
+export const TARIFFS_API_URL = 'https://common-api.wildberries.ru/api/v1/tariffs/commission';
+export const DB_CLIENT = 'pg';
+export const DB_HOST = process.env.DB_HOST || 'db';
+export const DB_PORT = parseInt(process.env.DB_PORT || '5432');
+export const DB_USER = process.env.DB_USER || 'postgres';
+export const DB_PASSWORD = process.env.DB_PASSWORD || 'postgres';
+export const DB_NAME = process.env.DB_NAME || 'postgres';

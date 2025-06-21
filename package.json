@@ -1,0 +1,45 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "migrate": "npx knex migrate:latest --knexfile ./dist/config/knex/knexfile",
+    "start": "node dist/index.js",
+    "dev": "npm run migrate && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmity627/MVP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmity627/MVP/issues"
+  },
+  "homepage": "https://github.com/Dmity627/MVP#readme",
+  "devDependencies": {
+    "@types/events": "^3.0.3",
+    "@types/express": "^5.0.0",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.13.10",
+    "@types/node-cron": "^3.0.11",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "google-spreadsheet": "^4.1.4",
+    "googleapis": "^105.0.0",
+    "knex": "^3.1.0",
+    "lodash": "^4.17.21",
+    "node-cron": "^3.0.3",
+    "pg": "^8.13.3"
+  }
+}
